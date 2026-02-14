@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORSUM Pet Shop - Home</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; background: linear-gradient(45deg, #FFD700, #FF6F00); min-height: 100vh; }
+        header { background-color: #007BFF; color: white; padding: 1rem; position: sticky; top: 0; z-index: 100; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 2rem; font-weight: bold; color: #FFD700; }
+        nav ul { list-style: none; display: flex; }
+        nav ul li { margin-left: 2rem; }
+        nav ul li a { color: white; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+        nav ul li a:hover { color: #FFD700; }
+        .hero { background: url('images/hero-pets.jpg') no-repeat center center/cover; height: 70vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; }
+        .hero h2 { font-size: 3rem; margin-bottom: 1rem; text-shadow: 2px 2px #333; }
+        .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
+        .btn { background-color: #FFD700; color: #333; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 10px; font-weight: bold; transition: background 0.3s; }
+        .btn:hover { background-color: #FF6F00; }
+        .features { padding: 2rem; max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .feature { background: white; padding: 1.5rem; border-radius: 10px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .feature h3 { color: #28A745; margin-bottom: 1rem; }
+        .testimonials { padding: 2rem; max-width: 1200px; margin: 0 auto; background: white; border-radius: 10px; margin-top: 2rem; }
+        .testimonials h2 { text-align: center; color: #28A745; margin-bottom: 2rem; }
+        .testimonial { margin-bottom: 2rem; padding: 1rem; border-left: 5px solid #FF6F00; background: #f9f9f9; }
+        .testimonial p { font-style: italic; }
+        .testimonial cite { font-weight: bold; color: #007BFF; }
+        .cta { padding: 2rem; max-width: 1200px; margin: 0 auto; text-align: center; background: #28A745; color: white; border-radius: 10px; margin-top: 2rem; }
+        footer { background-color: #333; color: white; text-align: center; padding: 1rem; }
+        @media (max-width: 768px) { nav ul { flex-direction: column; margin-top: 1rem; } nav ul li { margin-left: 0; margin-bottom: 0.5rem; } .hero h2 { font-size: 2rem; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">ORSUM</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div>
+            <h2>Welcome to ORSUM Pet Shop</h2>
+            <p>The best colorful toys, treats, and supplies for your pets! Discover a world of fun and health for your furry friends.</p>
+            <a href="products.html" class="btn">Explore Products</a>
+        </div>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <h3>Quality Toys</h3>
+            <p>Bright, durable toys in every color to keep your pets entertained. From chew toys to interactive puzzles, we have it all.</p>
+        </div>
+        <div class="feature">
+            <h3>Healthy Treats</h3>
+            <p>Nutritious, colorful snacks for happy, healthy pets. Organic options available for picky eaters.</p>
+        </div>
+        <div class="feature">
+            <h3>Expert Care</h3>
+            <p>Advice and products from pet lovers, with a rainbow of options. Free consultations for new pet owners.</p>
+        </div>
+        <div class="feature">
+            <h3>Custom Orders</h3>
+            <p>Personalize toys and accessories with your pet's favorite colors. Special discounts for bulk buys.</p>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+            <p>"ORSUM Pet Shop has the most vibrant toys! My dog loves the rainbow ball – it's his favorite!"</p>
+            <cite>- Sarah J., Dog Owner</cite>
+        </div>
+        <div class="testimonial">
+            <p>"The treats are amazing and healthy. My cat's coat has never looked better!"</p>
+            <cite>- Mike T., Cat Parent</cite>
+        </div>
+        <div class="testimonial">
+            <p>"Great service and colorful products. Highly recommend for bird lovers!"</p>
+            <cite>- Emily R., Bird Enthusiast</cite>
+        </div>
+        <div class="testimonial">
+            <p>"Custom beds are a game-changer. My pets sleep soundly in style."</p>
+            <cite>- David L., Multi-Pet Household</cite>
+        </div>
+    </section>
+    <section class="cta">
+        <h2>Ready to Brighten Your Pet's Life?</h2>
+        <p>Join thousands of happy pet owners. Shop now and get 10% off your first order!</p>
+        <a href="products.html" class="btn">Shop Now</a>
+    </section>
+    <footer>
+        <p>&copy; 2023 ORSUM Pet Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
